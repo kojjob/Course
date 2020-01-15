@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #f0f5ff;
+}
+
+.hero {
+  width: 80%;
+  height: 450px;
+  position: relative;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.btn-box {
+  display: flex;
+  border-bottom: 1px solid #475879;
+}
+
+.btn-box button {
+  display: flex;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  margin-right: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.btn-box .fab {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+button {
+  color: #475879;
+}
+
+.btn-box button:hover .fab {
+  color: #612385;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+  position: absolute;
+  transform: translateX(100%);
+  transition: .3s ease-in-out;
+}
+
+.content-right img {
+  width: 380px;
+}
+
+.content-right {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.content-left {
+  flex-basis: 50%;
+}
+.content-left h1 {
+  color: #475879;
+}
+
+.content-left p {
+  font-size: 18px;
+  padding: 30px 0;
+  color: #57647e;
+  line-height: 1.6em;
+}
+
+.content-left a {
+  width: 150px;
+  display: block;
+  padding: 8px 5px;
+  border-radius: 20px;
+  text-decoration: none;
+  background: #612385;
+  color: #d3dcee;
+  font-size: 13px;
+  text-align: center;
+  opacity: .8;
+  transition: .3s ease-out;
+}
+
+.content-left a:hover {
+  opacity: 1;
+}
+
+#content1 {
+  transform: translateX(0);
+}
+
+#btn1 {
+  color: #612385;
+}
+@media (max-width: 650px) {
+  .hero {
+    width: 80%;
+    height: 900px;
+    position: relative;
+    margin: 10px auto;
+    overflow: hidden;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 5% auto; 
+    position: absolute;
+    transform: translateX(100%);
+    transition: .3s ease-in-out;
+  }
+  .content-left {
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+  .btn-box {
+    display: block;
+    text-align: justify;
+    border-bottom: 1px solid #475879;
+  }
+  .btn-box .fab {
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+  .content-left p {
+    font-size: 13px;
+    padding: 30px 0;
+    color: #57647e;
+    text-align: center;
+  }
+  .content-left a {
+    margin: 0 auto;
+    width: 250px;
+    text-align: center;
+  }
+}
